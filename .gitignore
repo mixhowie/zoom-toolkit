@@ -1,0 +1,10 @@
+# 忽略 macOS 系统文件
+.DS_Store
+
+# 忽略打包生成的 zip 文件夹
+temp/
+*.zip
+
+# 忽略临时文件
+.tmp/
+.temp/
