@@ -1,0 +1,29 @@
+/* 剧场模式激活时的容器样式 */
+.zoom-full-window-mode {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999999 !important;
+    background-color: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 隐藏页面滚动条 */
+.zoom-no-scroll {
+    overflow: hidden !important;
+}
+
+/* 确保内部视频元素撑满容器并保持比例 */
+.zoom-full-window-mode video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+/* 隐藏可能遮挡视频的其他浮层元素（可选，根据 Zoom 实际 DOM 调整） */
+.zoom-full-window-mode .vjs-control-bar {
+    z-index: 10000000 !important;
+}

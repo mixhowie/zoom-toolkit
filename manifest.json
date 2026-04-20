@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ZoomToolkit",
+  "version": "1.0",
+  "description": "Zoom 增强工具箱：支持全窗口剧场模式等多种增强功能",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.zoom.us/rec/play/*",
+        "https://*.zoom.us/rec/share/*",
+        "https://*.zoom.com/rec/play/*",
+        "https://*.zoom.com/rec/share/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
